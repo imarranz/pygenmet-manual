@@ -1,0 +1,16 @@
+- file: docs/index.md
+
+- part: 'PyGenMet package'
+  chapters:
+  - file: docs/PyGenMet_package/introduction.md
+  - file: docs/PyGenMet_package/package/class.md
+  - file: docs/PyGenMet_package/package/fitness.md
+  - file: docs/PyGenMet_package/package/tools.md
+  - file: docs/PyGenMet_package/package/operators.md
+  - file: docs/PyGenMet_package/package/examples.md 
+  
+- part: 'Publications'
+  chapters:
+  - file: docs/Publications/publications.md  
+  - file: docs/Publications/congress_conferences_seminars.md  
+  - file: docs/Publications/metabolomics_subtypes.md    

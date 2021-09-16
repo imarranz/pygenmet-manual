@@ -1,0 +1,103 @@
+﻿#######################################################################################
+# Book settings
+title                       : "PyGenMet<br>Genetic Algorithms"
+logo                        : figures/logo.png #images/logo.png
+author                      : <a href="https://twitter.com/imarranz">Ibon Martinez-Arranz</a>  
+copyright                   : "2021"
+email                       : ibon.martinez@imarranz.com     
+exclude_patterns            : []  # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
+description: >- # this means to ignore newlines until "baseurl:"
+  This is an example book built with Jupyter Books.
+
+#######################################################################################
+# Execution settings
+execute:
+  execute_notebooks         : "cache"  # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
+  cache                     : ""  # A path to the jupyter cache that will be used to store execution artifacs. Defaults to `_build/.jupyter_cache/`
+  exclude_patterns          : []  # A list of patterns to *skip* in execution (e.g. a notebook that takes a really long time)
+
+#######################################################################################
+# HTML-specific settings
+html:
+  favicon                   : "figures/favicon.png"  # A path to a favicon image
+  navbar_number_sections    : false  # Add a number to each section in your left navbar
+  navbar_footer_text        : 'Powered by <a href="https://jupyterbook.org">Jupyter Book</a><br>Manteined by Ibon Martinez-Arranz'  # Will be displayed underneath the left navbar.
+  extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a><br>Manteined by Ibon Martinez-Arranz  # Will be displayed underneath the left navbar.
+  extra_footer              : ""  # Will be displayed underneath the footer.  
+  google_analytics_id       : ""  # A GA id that can be used to track book views.
+  home_page_in_navbar       : false  # Whether to include your home page in the left Navigation Bar
+  use_edit_page_button      : true  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+  use_issues_button         : true          
+  use_repository_button     : true
+  baseurl                   :  https://imarranz.com/pygenmet/
+  comments:
+    hypothesis              : true
+
+#######################################################################################
+# LaTeX-specific settings
+latex:             
+  latex_documents           :
+    targetname              : book.tex
+  latex_engine              : pdflatex  # one of 'pdflatex', 'xelatex' (recommended for unicode), 'luatex', 'platex', 'uplatex'
+
+#######################################################################################
+# Launch button settings
+launch_buttons:
+  notebook_interface        : "classic"  # The interface interactive links will activate ["classic", "jupyterlab"]
+  binderhub_url             : "https://mybinder.org"  # The URL of the BinderHub (e.g., https://mybinder.org)
+  colab_url                 : "https://colab.research.google.com"
+  jupyterhub_url            : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
+  thebelab                  : true  # Add a thebelab button to pages (requires the repository to run on Binder)
+
+repository:
+  url                       : https://github.com/imarranz/pygenmet  # The URL to your book's repository
+  path_to_book              : ""#"docs"  # A path to your book's folder, relative to the repository root.
+  branch                    : master  # Which branch of the repository should be used when creating links
+
+sphinx:
+  config: 
+    html_js_files:
+    - https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js 
+    # Añadido hoy. To use bootstrap
+    # El enlace de arriba permitiría usar los componentes de bootstrap
+    mathjax_config:
+      TeX:
+        Macros:
+          "N": "\\mathbb{N}"
+          "floor": ["\\lfloor#1\\rfloor", 1]
+          "bmat": ["\\left[\\begin{array}"]
+          "emat": ["\\end{array}\\right]"]
+    panels_add_boostrap_css: false # Cambiado HOY. Antes estaba en false 
+    # https://sphinx-panels.readthedocs.io/en/latest/
+    # extensions = [
+    #     ...
+    #     'sphinx_panels'
+    #     ...
+    # ]
+    # This extension includes the bootstrap 4 CSS classes relevant to panels. 
+    # They will be loaded by default but, if you are already using a bootstrap theme, 
+    # you can disable this by adding panels_add_boostrap_css = False to your conf.py.
+    html_show_copyright : true
+#    intersphinx_mapping: {
+#        "ebp": ("https://executablebooks.org/en/latest/", None)
+#        }
+
+#######################################################################################
+# Advanced and power-user settings
+  extra_extensions:
+    - sphinx_click.ext
+    - sphinx_tabs.tabs
+    - sphinx_panels
+
+#######################################################################################
+# Parse and render settings
+parse:
+  myst_extended_syntax      : true  # enable MyST extended syntax support (see documents for details)
+  myst_url_schemes          : [mailto, http, https]  # URI schemes that will be recognised as external URLs in Markdown links      
+
+  
+execute:
+    run_in_temp: true
+    allow_errors: false
+    stderr_output: remove
+
