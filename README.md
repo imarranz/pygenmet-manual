@@ -7,3 +7,5 @@ To compile or generate the documentation with [Jupyter Book](https://jupyterbook
 ```
 jupyter-book build pygenmet-manual/
 ```
+
+Last update on the website: [www.imarranz.com/pygenmet-manual/](www.imarranz.com/pygenmet-manual/)
