@@ -16,16 +16,27 @@ kernelspec:
 <script async="async" src="https://hypothes.is/embed.js"></script>
 ```
 
-(header_target)=
-# Genetics Algorithms with Python
-
-![](./figures/cover.png)
 
 
 **GENETICS ALGORITHMS WITH PYTHON**        
 <br>
 _Ibon Martínez-Arranz_
-2021-09-15
+_2021-09-15_
+<br>
+
+Sumary
+<hr style="width:100%;text-align:left;margin-left:0">
+<br>
+<img src="figures/cover.png" alt="cover" class="center" width = "400"> 
+<br>
+
+**About me**: My name is Ibon, I'm a mathematician, Data Scientist and Machine Learner.
+
+<div class="figure">
+<img src="figures/by-nc-sa.png" alt="" />
+<p class="caption">Creative Commons License</p>
+</div>
+<p>This book is licensed under the <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
 
 <!--
 
