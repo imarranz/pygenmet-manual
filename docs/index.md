@@ -17,12 +17,12 @@ kernelspec:
 ```
 
 
-# PYGENMET
+# PYGENMET MANUAL
 
 **GENETICS ALGORITHMS WITH PYTHON**        
 <br>
 _Ibon Martínez-Arranz_  
-_2021-09-15_
+_2021-09-20_
 <br>
 
 Sumary

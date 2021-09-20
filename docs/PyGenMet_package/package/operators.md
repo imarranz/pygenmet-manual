@@ -194,16 +194,17 @@ See {ref}`theory:mutation` for the theory and definitions.
     The _replacement function is ised to change the old generation population with the new generation. 
     Four process have been evaluated [1]:
     
-    1) Reemplazar  el  Peor  (Replace  Worst  Strategy,  RW).  Se  reemplaza  el  peor  elemento  de  la  población  si  el  hijo  lo  mejora.  
-    Ofrece  alta  presión  selectiva,  incluso cuando sus padres son elegidos aleatoriamente.
+    1) Replace Worst Strategy (RW). The worst element of the population is replaced if the child improves it.
+       It offers high selective pressure, even when its parents are chosen randomly.
     
-    2) Selección de Torneo Restringido (Restricted Tournament Selection, RTS) [2].    
+    2) Restricted Tournament Selection (RTS) [2].
     
-    3) Reemplazar el Peor Entre Semejantes (Worst Among Most Similar Replacement, WAMS)  [3]. se reemplaza el peor cromosoma del 
-    conjunto de los N (N = 3, . . . ) padres mas parecidos al descendiente.
+    3) Replace the Worst Among Most Similar Replacement (WAMS) [3]. the worst chromosome of the
+       set of the N (N = 3,...) parents most similar to the offspring.
     
-    4) Algoritmo de Crowding Determinístico (Deterministic Crowding, DC) [4].  Para facilitar la comparativa  utilizaremos  en  nuestros  experimentos. Una variante del DC en el que para cada cruce se generará un único descendente, que sustituirá al padre más parecido en el caso de que lo mejore. 
-    
+    4) Deterministic Crowding Algorithm (Deterministic Crowding, DC) [4]. To facilitate the comparison we will use in our experiments. A variant of the DC in which a single descendant will be generated for each cross, which will replace the most     
+       similar parent if it improves it. 
+       
     References
     ----------
     [1] https://sci2s.ugr.es/keel/pdf/keel/congreso/4-diversidadfinal2_daniel_molina.pdf
@@ -218,40 +219,40 @@ See {ref}`theory:mutation` for the theory and definitions.
 ?_selection
 ```
 
-    HAY DOS TIPOS DE SELECCIÓN. LA QUE SELECCIONA FUTUROS PADRES Y LOS SELECCIONA PADRES PARA CRUZARLOS
+    THERE ARE TWO TYPES OF SELECTION. THE ONE THAT SELECTS FUTURE PARENTS AND SELECTS THEM PARENTS TO CROSS THEM
     
-    Tecnicas de emparejamiento:
-    Los padres se pueden seleccionar de forma que se mantenga la diversidad de la poblacion 
+    Matching techniques:
+    Parents can be selected in a way that maintains the diversity of the population
     
-    1) Prohibicion de cruce basada en ascendencia. Un individuo no puede emparejarse con el mismo, ni con sus padres, ni con sus hijos, ni con sus hermanos
+    1) Prohibition of crossing based on ancestry. An individual cannot mate with himself, nor with his parents, nor with his children, nor with his siblings.
     
-    2) Prohibicion de incesto. Dos padres se cruzan si su distancia Hamming esta por encima de cierto umbral
+    2) Prohibition of incest. Two parents intersect if their Hamming distance is above a certain threshold
     
-    3) Emparejamiento variado. Un individuo se cruza con otro que es bastante diferente. Distancia de Hamming
+    3) Varied pairing. One individual crosses paths with another who is quite different. Hamming distance
     
-    LA QUE SELECCIONA UNA NUEVA GENERACIÓN
+    THE ONE THAT SELECTS A NEW GENERATION
     
     1) Random Selection (RS)
     
-    2) Tournament Selection (TS): escoge al individuo de mejor
-    fitness de entre N individuos seleccionados aleatoriamente (N = 2, 3, . . . )
-    La seleccion por torneo, constituye un procedimiento de seleccion de padres muy extendido y en el cual 
-    la idea consiste en escoger al azar un numero de individuos de la poblacion, taman~o del torneo, 
-    (con o sin reemplazamiento), seleccionar el mejor individuo de este grupo, y repetir el proceso hasta que 
-    el numero de individuos seleccionados coincida con el taman~o de la poblacion. Habitualmente el 
-    taman~o del torneo es 2, y en tal caso se ha utilizado una version probabilistica en la cual se permite 
-    la seleccion de individuos sin que necesariamente sean los mejores.
+    2) Tournament Selection (TS): choose the best individual
+    fitness among N randomly selected individuals (N = 2, 3,...)
+    The selection by tournament, constitutes a very extended selection procedure of parents and in which
+    The idea is to randomly pick a number of individuals from the population, size of the tournament,
+    (with or without replacement), select the best individual from this group, and repeat the process until
+    the number of individuals selected matches the size of the population. Usually the
+    tournament size is 2, and in this case a probabilistic version has been used in which it is allowed
+    the selection of individuals without necessarily being the best.
 
-    3) Linear Rank Selection (LRS): la poblacion se ordena en funcion de su fitness 
-    y se asocia una probabilidad de seleccion a cada individuo que depende de su orden
+    3) Linear Rank Selection (LRS): the population is ordered according to its fitness
+    and a selection probability is associated with each individual that depends on their order
     
-    4) Seleccion por Ruleta (Roulette Selection, RS): asigna una probabilidad de seleccion proporcional al valor del fitness del individuo
-    Baker (1987) introduce un metodo denominado muestreo universal estocastico, el cual utiliza un unico giro 
-    de la ruleta siendo los sectores circulares proporcionales a la funcion objetivo. Los individuos son 
-    seleccionados a partir de marcadores, igualmente espaciados y con comienzo aleatorio. (algoritmos geneticos.pdf)
+    4) Selection by Roulette (Roulette Selection, RS): assigns a selection probability proportional to the fitness value of the individual
+    Baker (1987) introduces a method called universal stochastic sampling, which uses a single turn
+    of the roulette being the circular sectors proportional to the objective function. The individuals are
+    selected from markers, equally spaced and with a random start. (genetic algorithms.pdf)
     
-    5) Elitista: En el modelo de seleccion elitista se fuerza a que el mejor individuo de la poblacion 
-    en el tiempo t, sea seleccionado como padre.
+    5) Elitist: In the elitist selection model, the best individual in the population is forced to
+    at time t, be selected as the parent. 
     
     Parameters
     ----------

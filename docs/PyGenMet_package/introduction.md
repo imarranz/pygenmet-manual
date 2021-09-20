@@ -2,11 +2,6 @@
 
 # Introduction
 
-**Table of contents**
-```{tableofcontents}
-```
-
-
 Nonalcoholic fatty liver disease (NAFLD) is a consequence of defects in diverse metabolic pathways or nutritional effects that involve a hepatic accumulation of triglycerides {cite}`barr_obesity-dependent_2012`. Features of these deviations might determine whether NAFLD progresses to nonalcoholic steatohepatitis (NASH). We investigated whether the diverse defects observed in patients with NAFLD are due to different NAFLD subtypes with specific serum metabolomic profiles and whether these can distinguish patients with NASH from patients with simple steatosis {cite}`martinez-arranz_metabolomicbased_2018`.
 
 We collected liver and serum from several murine models, which have genetic alterations, nutritional alterations or both. I also analyzed serum metabolomes {cite}`martinez-arranz_enhancing_2015` of 535 patients with biopsy-proven NAFLD (353 with simple steatosis and 182 with NASH) and compared them with serum metabolomes of these murine models {cite}`barr_liquid_2010,alonso_metabolomic_2017,iruarrizaga-lejarreta_role_2017`. In a previous analysis, we identified several subtypes of NAFLD using cluster analysis and we recognized markers that differentiate steatosis from NASH in each subtype.
