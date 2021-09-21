@@ -30,7 +30,7 @@ I publish each release of PyGenMet on Zenodo and here is a list of version:
 
 |Version|Date|DOI|
 |-------|----|---|
-| [v1.0.0](https://github.com/imarranz/pygenmet/releases/tag/v1.0.0) | August 22, 2021 | [![10.5281/zenodo.5233539](https://zenodo.org/badge/DOI/10.5281/zenodo.5233539.svg) |
+| [v1.0.0](https://github.com/imarranz/pygenmet/releases/tag/v1.0.0) | August 22, 2021 | ![10.5281/zenodo.5233539](https://zenodo.org/badge/DOI/10.5281/zenodo.5233539.svg) |
  
 If you'd like to cite this package, instead of a specific version, use the following DOI: [https://doi.org/10.5281/zenodo.5233539](https://doi.org/10.5281/zenodo.5233539). Here is the bibtex entry for the book:
 
