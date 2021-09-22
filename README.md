@@ -1,5 +1,8 @@
 # PYGENMET MANUAL
 
+[![Twitter Follow](https://img.shields.io/twitter/follow/imarranz.svg?style=social)](https://twitter.com/imarranz)
+![10.5281/zenodo.5233539](https://zenodo.org/badge/DOI/10.5281/zenodo.5233539.svg)
+
 ## Introduction
 
 This repository contains the documentation of [pygenmet](https://github.com/imarranz/pygenmet), a genetic algorithms package developed in Python.
