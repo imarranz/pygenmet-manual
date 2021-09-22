@@ -24,7 +24,9 @@ kernelspec:
 _Ibon Martínez-Arranz_  
 _2021-09-20_
 <br>
-
+[![Twitter Follow](https://img.shields.io/twitter/follow/imarranz.svg?style=social)](https://twitter.com/imarranz)
+![10.5281/zenodo.5233539](https://zenodo.org/badge/DOI/10.5281/zenodo.5233539.svg)
+<br>
 <!--
 Sumary
 <hr style="height:2px;border:none;color:#333;background-color:#333;" />
