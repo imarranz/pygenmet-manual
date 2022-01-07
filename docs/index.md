@@ -22,7 +22,7 @@ kernelspec:
 **GENETICS ALGORITHMS WITH PYTHON**        
 <br>
 _Ibon Martínez-Arranz_  
-_2021-09-20_
+_2022-01-07_
 <br>
 [![Twitter Follow](https://img.shields.io/twitter/follow/imarranz.svg?style=social)](https://twitter.com/imarranz)
 ![10.5281/zenodo.5233539](https://zenodo.org/badge/DOI/10.5281/zenodo.5233539.svg)
@@ -95,4 +95,4 @@ If you'd like to cite this package, instead of a specific version, use the follo
 }
 ```
 
-Last update on the website: [www.imarranz.com/pygenmet-manual/](www.imarranz.com/pygenmet-manual/)
+Last update on the website: [www.imarranz.com/pygenmet-manual/](http://www.imarranz.com/pygenmet-manual/docs/index.html)
