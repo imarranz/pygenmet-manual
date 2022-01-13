@@ -40,7 +40,7 @@ If you'd like to cite this package, instead of a specific version, use the follo
 
 ```
 @software{ibon_martinez_arranz_2021_5233539,
-  author       = {Ibon Martínez-Arranz},
+  author       = {Ibon MartÃ­nez-Arranz},
   title        = {imarranz/pygenmet: v1.0.0},
   month        = aug,
   year         = 2021,
@@ -51,4 +51,4 @@ If you'd like to cite this package, instead of a specific version, use the follo
 }
 ```
 
-Last update on the website: [www.imarranz.com/pygenmet-manual/](www.imarranz.com/pygenmet-manual/)
+Last update on the website: [www.imarranz.com/pygenmet-manual/](http://www.imarranz.com/pygenmet-manual/docs/index.html)
