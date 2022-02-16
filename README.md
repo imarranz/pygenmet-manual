@@ -55,10 +55,11 @@ Last update on the website: [www.imarranz.com/pygenmet-manual/](http://www.imarr
 
 ```mermaid
 flowchart TB
-A[Initial Population] ==> B[Fitness Evaluation]
-B[Fitness Evaluation] ==> F{Convergence}
-F{Convergence} ==NO==> id1[Genetic Operators]
-F{Convergence} ==YES==> G[Output]
+ids((Start)) ==> A[Initial Population]
+A[Initial Population] ==Evaluate all<br>chromosomes in the<br>population==> B[Fitness Evaluation]
+B[Fitness Evaluation] ==> F{Stopping Criteria}
+F{Stopping Criteria} ==NO==> id1[Genetic Operators]
+F{Stopping Criteria} ==YES==> G[Best<br>Chromosome<br>Result]
 C[Selection] ==> D[Crossover]
 D[Crossover] ==> E[Mutation]
 subgraph id1[Genetic Operators]
@@ -67,6 +68,11 @@ subgraph id1[Genetic Operators]
   D[Crossover]
   E[Mutation]
 end
+subgraph id2[Algorithm]
+ id1[Genetic Operators]
+ B[Fitness Evaluation]
+ F{Stopping Criteria}
+end
 id1[GeneticOperators] ==> B[Fitness Evaluation]
-
+G[Best<br>Chromosome<br>Result] ==> ide((End))
 ```
