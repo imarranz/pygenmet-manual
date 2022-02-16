@@ -52,3 +52,21 @@ If you'd like to cite this package, instead of a specific version, use the follo
 ```
 
 Last update on the website: [www.imarranz.com/pygenmet-manual/](http://www.imarranz.com/pygenmet-manual/docs/index.html)
+
+```mermaid
+flowchart TB
+A[Initial Population] ==> B[Fitness Evaluation]
+B[Fitness Evaluation] ==> F{Convergence}
+F{Convergence} ==NO==> id1[Genetic Operators]
+F{Convergence} ==YES==> G[Output]
+C[Selection] ==> D[Crossover]
+D[Crossover] ==> E[Mutation]
+subgraph id1[Genetic Operators]
+  direction TB
+  C[Selection]
+  D[Crossover]
+  E[Mutation]
+end
+id1[GeneticOperators] ==> B[Fitness Evaluation]
+
+```
