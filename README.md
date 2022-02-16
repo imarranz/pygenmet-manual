@@ -75,4 +75,12 @@ subgraph id2[Algorithm]
 end
 id1[GeneticOperators] ==> B[Fitness Evaluation]
 G[Best<br>Chromosome<br>Result] ==> ide((End))
+subgraph id3[Genetic Algorithm Schema]
+ A[Initial Population]
+ id2[Algorithm]
+ G[Best<br>Chromosome<br>Result]
+end
+
+style id1 fill:#aaa,stroke-width:4px
+style id2 fill:#777,stroke-width:4px
 ```
