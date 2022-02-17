@@ -53,6 +53,12 @@ If you'd like to cite this package, instead of a specific version, use the follo
 
 Last update on the website: [www.imarranz.com/pygenmet-manual/](http://www.imarranz.com/pygenmet-manual/docs/index.html)
 
+The following flowchart has been generated with [mermaid](https://mermaid-js.github.io/mermaid/#/)
+
+[Include diagrams in your markdown files with mermaid](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/)  
+[Basic syntax](https://mermaid-js.github.io/mermaid/#/flowchart?id=subgraphs)  
+[Mermaid Cheat Sheet](https://jojozhuang.github.io/tutorial/mermaid-cheat-sheet/)  
+
 ```mermaid
 flowchart TB
 ids((Start)) ==> A[Initial Population]
